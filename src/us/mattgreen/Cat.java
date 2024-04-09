@@ -3,7 +3,7 @@ package us.mattgreen;
 /**
  * Created by mgreen14 on 12/28/17.
  */
-public class Cat extends Pet implements Talkable {
+public class Cat extends Pet implements Talkable, Animal {
     private int mousesKilled;
 
     public Cat(int mousesKilled, String name) {

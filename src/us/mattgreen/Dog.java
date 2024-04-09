@@ -3,7 +3,7 @@ package us.mattgreen;
 /**
  * Created by mgreen14 on 12/27/17.
  */
-public class Dog extends Pet implements Talkable {
+public class Dog extends Pet implements Talkable, Animal {
     private boolean friendly;
 
     public Dog(boolean friendly, String name) {

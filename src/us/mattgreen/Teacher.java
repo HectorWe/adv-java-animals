@@ -3,7 +3,7 @@ package us.mattgreen;
 /**
  * Created by mgreen14 on 12/27/17.
  */
-public class Teacher extends Person implements Talkable {
+public class Teacher extends Person implements Talkable, Animal {
     private int age;
 
     public Teacher(int age, String name) {
@@ -22,5 +22,10 @@ public class Teacher extends Person implements Talkable {
     @Override
     public String talk() {
         return "Don't forget to do the assigned reading!";
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher: " + "name=" + getName() + " age=" + getAge();
     }
 }
